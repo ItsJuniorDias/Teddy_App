@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-// import { Container } from './styles';
+import { Container } from "./styles";
 
-export const ProductsScreen: React.FC = () => {
+export const SignUpScreen = () => {
   return (
-    <View>
+    <Container>
       <Text>Product screen</Text>
-    </View>
+    </Container>
   );
 };

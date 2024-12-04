@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, Button } from "react-native";
 
-export const HomeScreen = () => {
+export const SignInScreen = () => {
   const navigation = useNavigation();
 
   return (
@@ -10,7 +10,7 @@ export const HomeScreen = () => {
       <Text>Text</Text>
 
       <Button
-        onPress={() => navigation.navigate("Product")}
+        onPress={() => navigation.navigate("SignUp")}
         title="Clicou Aqui"
       />
     </View>

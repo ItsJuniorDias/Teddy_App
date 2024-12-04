@@ -5,15 +5,15 @@ import {
   StaticParamList,
 } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { HomeScreen, ProductsScreen } from "../screens";
+import { SignInScreen, SignUpScreen } from "../screens";
 
 const RootStack = createNativeStackNavigator({
   screenOptions: {
     headerShown: false,
   },
   screens: {
-    Home: HomeScreen,
-    Product: ProductsScreen,
+    SignIn: SignInScreen,
+    SignUp: SignUpScreen,
   },
 });
 
