@@ -16,7 +16,7 @@ export const SignInScreen = () => {
 
   const { state } = useExample();
 
-  console.log(state, "STATE");
+  // console.log(state, "STATE");
 
   const bears = useStore((state) => state.bears);
 
@@ -45,19 +45,18 @@ export const SignInScreen = () => {
   const setupFCM = async () => {
     const permissionGranted = await requestPermission();
 
+    console.log(!permissionGranted, "PERMISSION");
+
     if (!permissionGranted) {
       return;
     }
 
+    console.log("PASSOU AQUI");
+
     try {
-      messaging()
-        .registerDeviceForRemoteMessages()
-        .then((response) => {
-          console.log(response, "RESPONSE");
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      const response = await messaging().registerDeviceForRemoteMessages();
+
+      console.log(response, "RESPONSE");
 
       const token = await messaging().getToken();
 

@@ -1,24 +1,21 @@
-/**
- * @format
- */
-
 import { AppRegistry } from "react-native";
 import App from "./src/App";
 import firebase from "@react-native-firebase/app";
 
 import { name as appName } from "./app.json";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyArTvrIZ7O8bEXNKyXUi0x2G4RhHIZDjr8",
-  authDomain: "myapp-8f5ba.firebaseapp.com",
-  databaseURL: "https://myapp-8f5ba-default-rtdb.firebaseio.com",
-  projectId: "myapp-8f5ba",
-  storageBucket: "myapp-8f5ba.appspot.com",
-  messagingSenderId: "289859620402",
-  appId: "1:289859620402:web:7d27dd977153639111b62b",
-  measurementId: "G-4NH02J1ELQ",
-};
-
-firebase.initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+  firebase.initializeApp({
+    apiKey: "AIzaSyBTe5epjVWVWY5IU-5At7F7lRSSi4OPV1Q",
+    appId:
+      Platform.OS === "ios"
+        ? "1:289859620402:ios:ba91ab57698779ba11b62b"
+        : "1:289859620402:android:035db313007d39fe11b62b",
+    projectId: "myapp-8f5ba",
+    databaseURL: "https://myapp-8f5ba-default-rtdb.firebaseio.com/",
+    storageBucket: "gs://myapp-8f5ba.appspot.com",
+    messagingSenderId: "289859620402",
+  });
+}
 
 AppRegistry.registerComponent(appName, () => App);

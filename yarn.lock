@@ -2108,14 +2108,14 @@
     prompts "^2.4.2"
     semver "^7.5.2"
 
-"@react-native-firebase/app@^21.6.1":
+"@react-native-firebase/app@21.6.1":
   version "21.6.1"
   resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-21.6.1.tgz#2f3a5f9bc9436ba3a0a76b9d32eb685e0a379340"
   integrity sha512-o1i3aQMtJeofue+73j/8KO2l+/bRHaSHqOl7FtIeZfajQZaulaROugD2Rr2Mlc1o7LfEUyoDOoij9nGdrydEyw==
   dependencies:
     firebase "10.13.2"
 
-"@react-native-firebase/messaging@^21.6.1":
+"@react-native-firebase/messaging@21.6.1":
   version "21.6.1"
   resolved "https://registry.yarnpkg.com/@react-native-firebase/messaging/-/messaging-21.6.1.tgz#95c45ad7ca81d9a88ce0bfee05ba3a2555c85058"
   integrity sha512-WoMGcqflDyhwpe5saqJFNKcvRiGRhW764cNv9j9fca11rtzqw186/frvE+QDVuUBEeaOZJg7bW+BV19IToc92g==
