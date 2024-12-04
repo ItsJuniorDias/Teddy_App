@@ -1,0 +1,6 @@
+module Pods_teddy_app {
+  umbrella header "Pods-teddy_app-umbrella.h"
+
+  export *
+  module * { export * }
+}
