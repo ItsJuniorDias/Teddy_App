@@ -7,7 +7,7 @@ import {
 import { SignInScreen, SignUpScreen } from "../screens";
 
 const RootStack = createNativeStackNavigator({
-  initialRouteName: "Welcome",
+  initialRouteName: "SignIn",
   screenOptions: {
     headerShown: false,
   },
@@ -25,4 +25,4 @@ declare global {
   }
 }
 
-export const Navigation = createStaticNavigation(RootStack);
+export const NavigationAuth = createStaticNavigation(RootStack);
